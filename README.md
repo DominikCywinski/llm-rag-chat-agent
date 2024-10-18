@@ -27,13 +27,15 @@ This repository combines powerful AI techniques to build an interactive and inte
 1. Clone the repository.
 
 2. Install dependencies using Poetry:
-   ```poetry install --no-root
+   ```bash
+   poetry install --no-root
    ```
    
 3. Set up your environment variables (.env file).
 
 4. Activate the Poetry shell:
-   ```poetry shell
+   ```bash
+   poetry shell
    ```
 
 ## Usage
@@ -41,11 +43,13 @@ This repository combines powerful AI techniques to build an interactive and inte
 1. Place your .txt data in the ./input_docs directory (optional)
 
 2. Create vector store:
-   ```python vector_store.py
+   ```bash
+   python vector_store.py
    ```
 
 3. Start chatting:
-   ```python chat.py
+   ```bash
+   python chat.py
    ```
    
 ## Contributing

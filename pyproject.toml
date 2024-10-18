@@ -1,6 +1,8 @@
 [tool.poetry]
 name = "langchain-env"
 version = "0.1.0"
+description = "Langchain environment"
+authors = ["Dominik Cywiński"]
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.12"

@@ -7,7 +7,6 @@ dependencies:
   - streamlit==1.40.1
   - wikipedia==1.4.0
   - arxiv==2.1.3
-  - pytest
   - pip
   - pip:
       - langchain-core==0.3.21
@@ -15,3 +14,4 @@ dependencies:
       - langchain-huggingface==0.1.2
       - faiss-cpu==1.9.0.post1
       - langchain-google-genai==2.0.5
+      - pytest

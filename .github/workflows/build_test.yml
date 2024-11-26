@@ -22,7 +22,14 @@ jobs:
           auto-update-conda: true
           environment-file: environment.yml
           activate-environment: rag-agent
-        
+          
+      # Create .env file with secrets
+      - name: Create .env file
+        run: |
+          echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" >> .env
+          echo "LANGCHAIN_API_KEY=${{ secrets.LANGCHAIN_API_KEY }}" >> .env
+          echo "HUGGINGFACE_TOKEN=${{ secrets.HUGGINGFACE_TOKEN }}" >> .env
+          
       # Verify Conda environment
       - name: Check installed packages
         run: |

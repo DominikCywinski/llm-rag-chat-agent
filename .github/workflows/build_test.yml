@@ -22,19 +22,18 @@ jobs:
           auto-update-conda: true
           environment-file: environment.yml
           activate-environment: rag-agent
-          
-      - name: Activate Conda Env
-        run: |
-          source $(conda info --base)/etc/profile.d/conda.sh
-          conda activate rag-agent
         
       # Verify Conda environment
       - name: Check installed packages
         run: |
+          source $(conda info --base)/etc/profile.d/conda.sh
+          conda activate rag-agent
           which python
           python --version
           conda list
         
       - name: Run tests
         run: |
+          source $(conda info --base)/etc/profile.d/conda.sh
+          conda activate rag-agent
           pytest tests/

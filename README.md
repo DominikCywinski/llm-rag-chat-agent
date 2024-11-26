@@ -1,6 +1,6 @@
 # LLM-RAG-Chat-Agent
 
-This repository combines AI techniques to build an interactive and intelligent chatbot. It integrates a **Large Language Model (LLM)** with **Retrieval-Augmented Generation (RAG)** and an **Agent** framework for enhanced information retrieval, reasoning, and real-time conversation capabilities.
+This repository combines AI techniques to build an interactive and intelligent chatbot. It integrates a **Large Language Model (LLM)** with **Retrieval-Augmented Generation (RAG)** and an **Agent** framework for enhanced information retrieval, reasoning, and real-time conversation capabilities. The project includes an automated CI/CD pipeline for seamless builds and tests, as well as unit tests to ensure the reliability and accuracy of the model.
 
 ## Features
 
@@ -8,13 +8,14 @@ This repository combines AI techniques to build an interactive and intelligent c
 - **Retrieval-Augmented Generation (RAG):** Incorporates a retrieval mechanism to enhance responses with relevant context from external sources such as Wikipedia or Arxiv.
 - **Agent Framework:** Enables the chatbot to make decisions and act autonomously to accomplish tasks, such as answering questions, fetching information, or solving problems.
 - **Customizable Pipelines:** Easy integration and adaptation for various use cases, from question-answering systems to specialized knowledge assistants.
-
+- **Automated CI/CD Pipeline:** Automatically builds and tests the application with each push to the repository or pull request.
+  
 ## Use Cases
 
 - Question answering based on external knowledge.
 - Conversational AI with dynamic, context-aware responses.
 - Enhanced knowledge retrieval using the RAG framework.
-- 
+  
 ## Technologies
 
 - **Gemini 1.5 Flash** (GenAI model).

@@ -1,0 +1,28 @@
+name: Build Conda Environment
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Install Miniconda
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          environment-file: env.yml
+          activate-environment: rag-agent
+
+      # Verify Conda environment
+      - name: Check installed packages
+        run: conda list

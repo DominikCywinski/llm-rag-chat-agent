@@ -20,7 +20,7 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           auto-update-conda: true
-          environment-file: env.yml
+          environment-file: environment.yml
           activate-environment: rag-agent
 
       # Verify Conda environment

@@ -30,7 +30,10 @@ jobs:
         
       # Verify Conda environment
       - name: Check installed packages
-        run: conda list
+        run: |
+          which python
+          python --version
+          conda list
         
       - name: Run tests
         run: |
